@@ -1,6 +1,44 @@
+// $bg-img: url('./../../../media/img/logo.png');
+
 .wrapper{
-    width: 1380px;
+    width: 100%;
     height: 125px;
-    margin-right: 152px;
-    margin-left: 152px;
+    background-color: #ffd400;
+    display: inline-flex;
+}
+
+.header-top {
+    padding: 10px 0 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.header-top div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-left{
+    left: 0;
+    right: unset;
+    object-position: 100% 0 ;
+    height: 77px;
+    width: calc((100% - 1200px)/2);
+    max-width: 245px;
+    object-fit: cover;
+}
+
+.header__logo{
+    height: 52px;
+    padding-right: 15px;
+    padding-left: 0px;
+    width: 229px;
+    background-size: 229px 52px;
+}
+
+.header-logo__img{
+    width: 229px;
+    height: 52px;
 }
