@@ -1,0 +1,146 @@
+// $bg-img: url('./../../../media/img/logo.png');
+
+.wrapper{
+    width: 100%;
+    height: 125px;
+    background-color: #ffd400;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.header-bar{
+    display: block;
+}
+
+.header-top {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-left: 0;
+    width: 1120px;
+    height: 52px;
+    z-index: 0;
+}
+
+.header-bottom{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.header-top__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-left{
+    left: 0;
+    margin-left: 80;
+    right: unset;
+    object-position: 100% 0 ;
+    height: 77px;
+    width: calc((100% - 1200px)/2);
+    max-width: 245px;
+    object-fit: cover;
+}
+
+.img-right{
+    right: 0;
+    left: unset;
+    object-position: 100% 0 ;
+    height: 77px;
+    width: calc((100% - 1200px)/2);
+    max-width: 245px;
+    object-fit: cover; 
+}
+
+.header__logo{
+    height: 52px;
+    padding-right: 15px;
+    padding-left: 0px;
+    width: 229px;
+    background-size: 229px 52px;
+}
+
+.header-logo__img{
+    width: 229px;
+    height: 52px;
+}
+
+.type{
+    text-decoration: none;
+    text-align: center;
+}
+
+.title{
+    display: inline-block;
+    text-decoration: none;
+    color:var(--text-color);
+    padding-bottom: 13px;
+    line-height: 21px;
+    vertical-align: middle;
+}
+
+.icon{
+    width: 20px;
+    display: inline;
+}
+
+.accout-box{
+    background-color: rgba(255,172,10,.6);
+    width: 120px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.accout-child{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--text-color);
+    align-items: center;
+    line-height: 20px;
+}
+
+.cart-box{
+    width: 130px;
+    background-color: rgba(255,172,10,.6);
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    
+}
+
+.cart-box a{
+    text-decoration: none; 
+    padding-top: 10px;
+}
+
+.cart-number{
+    font-weight: 600;
+    align-items: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 40%;
+    width: 9px;
+    height: 9px;
+}
+
+.cart-icon{
+    display: inline;
+    margin-right: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding-top: 1px;
+}
+
+.cart-title{
+    display: inline;
+    padding-top: 1px;
+    color: var(--text-color);
+}

@@ -1,0 +1,313 @@
+.footer{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80.23%;
+    height: 302px;
+}
+
+.footer::before{
+    display: block;
+    margin-left: -149px;
+    width: 1526px;
+    position: absolute;
+    height: 1px;
+    background-color: rgb(216, 204, 218);
+    content: "";
+    top: -10px;
+}
+
+.info{
+    width: 100%;
+    height: 218px;
+    align-items: center;
+    display: inline-flex;
+}
+
+.copyright{
+    width: 1524px;
+    height: 84px;
+    padding-top: 22px;
+    display: block;
+    margin-left: -149px;
+    font-size: 1.1rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.copyright section{
+    width: 100%;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.copyright p{
+    color: #666;
+}
+
+.suport{
+    width: 66.4%;
+    height: 218px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more{
+    width: 29%;
+    height: 218px;
+    margin-left: 56px;
+}
+
+.f-listmenu{
+    font-size: 1.3rem;
+}
+
+.f-listmenu h4{
+    margin-top: 10px;
+}
+
+.f-listmenu a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.f-listmenu li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.f-socical div{
+    display: block;
+}
+
+.f-socical{
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.f-socical a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 30px;
+}
+
+.f-socical a i{
+    margin-right: 5px;
+}
+
+.icon-facebook{
+    background-image: url("https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/icon_common@2x.webp");
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+    background-position: -225px 0;
+    height: 18px;
+    width: 18px;
+}
+
+.icon-youtube{
+    background-image: url("https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/icon_common@2x.webp");
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+    background-position: -200px 0;
+    height: 18px;
+    width: 18px;
+
+}
+
+.icon-zalo{
+    max-width: 18px;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+
+.icon-congthuong{
+    background-position: -200px -30px;
+    height: 24px;
+    width: 79px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/icon_common@2x.webp);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-khieunai{
+    background-position: -250px 0px;
+    height: 25px;
+    width: 25px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/icon_common@2x.webp);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-protected{
+    background-position: -80px -60px;
+    height: 24px;
+    width: 122px;    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 200px;
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/desk/icon_common@2x.webp);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.f-certify{
+    margin-top: 20px;
+}
+
+.f-certify a{
+    vertical-align: top;
+}
+
+.lazy{
+    width: 85px;
+    height: 35px;
+}
+
+.f-website{
+
+}
+
+.footer__logo p{
+    color: #222;
+    font-size: 1.2rem;
+    line-height: 21px;
+    font-weight: 200;
+}
+
+.footer__logo {
+    list-style: none;
+}
+
+.footer__logolist{
+    font-size: 0;
+    list-style: none;
+    margin-top: 10px;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.footer__logolist a{
+    text-align: -webkit-match-parent;
+    float: left;
+    width: 80px;
+    margin: 0 8px 8px 0;
+    display: inline;
+}
+
+
+.iconlogo-topzone{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: 0 -58px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-dienmayxanh{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: -85px 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-bachhoaxanh{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: -170px 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-ankhang{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: -85px -90px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-kids{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: -85px -120px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-tantam{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: -170px -90px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-4kfarm{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: 0 -90px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+.iconlogo-vieclam{
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/DMX/Global/Desktop/Logo-webmoi.webp);
+    background-position: 0 -120px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 24px;
+    width: 80px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 250px 200px;
+}
+
+

@@ -1,0 +1,15 @@
+.accout-box{
+    background-color: rgba(255,172,10,.6);
+    width: 120px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.accout-child{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--text-color);
+    align-items: center;
+    line-height: 20px;
+}

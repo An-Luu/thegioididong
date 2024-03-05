@@ -1,0 +1,3 @@
+
+ method add data in mongodb
+config> db.data.updateOne({_id:ObjectId("65bd68a0fec1211ea0161c65")}, {$push: {fullname:[{firstname:"luu", lastname:"an"}]}})
