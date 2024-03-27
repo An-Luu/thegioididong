@@ -9,8 +9,9 @@ const { isStringObject } = require('util/types');
 const Schema = mongoose.Schema;
 
 const Course = new Schema({
-    name: { type: String, maxLength: 255 },
+    username: { type: String, maxLength: 255 },
     password: { type: String },
+    admin: { type: Boolean},
     email: { type: String },
     descrition: { type: String, maxLength: 255 },
     image: { type: String, maxLength: 600 },
@@ -26,7 +27,7 @@ Course.statics = {
     }
   }
   
-  Course.methods = {
+Course.methods = {
     comparePassword(password) {
       return bcrypt.compare(password, this.password);
     }

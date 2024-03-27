@@ -1,18 +1,16 @@
-import axios from "axios";
-
-const request = axios.create({
-    baseURL: 'http://localhost:3002/home/'
-})
-
-export const get = async (path, options = {}) => {
-    const response = await request.get(path, options)
-    return response.data
+class Request{
+    async get(url, path, options = {}){
+        const response = await url.get(path, options)
+        return response.data
+    }
+    async post_login(url, path){
+        const request = await url.post(path)
+        return request.data
+    }
 }
 
-export default request
 
-
-
+module.exports = new Request()
 
 
 

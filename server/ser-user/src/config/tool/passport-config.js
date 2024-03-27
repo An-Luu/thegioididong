@@ -12,7 +12,7 @@ let initPassportLocal = () => {
   }, async (req, email, password, done)=> {
     try {
       let user = await Course.findByEmail(email);
-      if (!user) {
+      if (!user || !user.admin) {
         return done(null, false);
       }
 
@@ -37,5 +37,6 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(user, done) {
   done(null, user);
 });
+
 
 module.exports = initPassportLocal;

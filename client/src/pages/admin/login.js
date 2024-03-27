@@ -1,27 +1,47 @@
 import classNames from "classnames/bind";
-import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from "formik"
-import * as Yup from "yup"
-import axios from "axios"
+import React, { useEffect, useState } from 'react'
 import style from "./admin.module.scss"
+import * as loginSevices from '../../services/loginServices'
+import { useNavigate } from "react-router-dom";
 
 const cx = classNames.bind(style)
 
 function Login() {
+    const [userName, setUserName] = useState('')
+    const [passWord, setPassWord] = useState('')
+    const [action, setAction ] = useState('')
+    const [search, setSearch] = useState('')
 
-  const initialValues = { username: "", password: "" };
-  const validationSchema = Yup.object().shape({
-    username: Yup.string().required(),
-    password: Yup.string().required(),
-})
 
-const onSubmit = (data) => {
-    axios.post('http://localhost:3003/login', data).then((response) => {
-        console.log(response)
-        console.log(data)
-      })
-}
+  const buttonType = () => {
+      if(userName.length > 4 && passWord.length > 5) {
+        return 'submit'
+      }
+      else{
+        return 'button'
+      }
+    }
 
+    const fetchApi = async () => {
+      const result = await loginSevices.login(userName, passWord)
+      setSearch(result)
+    }
+
+   fetchApi()
+
+    const submitForm = () => {    
+      if(search == true){
+        setAction('/')
+      }
+    }
+
+    const handleChangePass =(e) => {
+      setPassWord(e.target.value)
+    }
+
+    const handleChangeUser = (e) => {
+      setUserName(e.target.value)
+    }
 
     return ( 
         <div className={cx('login')}>
@@ -29,29 +49,31 @@ const onSubmit = (data) => {
             <img className={cx('img-thumb')} src="https://cdn.tgdd.vn/2022/10/banner/TGDD-540x270.png"></img>
         </div>
 
-      <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema} className={cx("box")}>
-        <Form action="">
+      <div className={cx("box")}>
+        <form action={action} >
           <h3 className={cx('title')}>Đăng nhập với tư cách quản trị viên</h3>
           <div className={cx("ui divider")}></div>
           <div className={cx("form")}>
             <div className={cx("field")}>
               <label className={cx('key')}>Tên tài khoản</label>
-              <Field
+              <input
                 type="text"
-                name="username"
+                value={userName}
+                onChange={handleChangeUser}
               />
             </div>
             <div className={cx("field")}>
               <label className={cx('key', 'key-1')}>Mật khẩu</label>
-              <Field
+              <input
                 type="password"
-                name="password"
+                value={passWord}
+                onChange={handleChangePass}
               />
             </div>
-            <button type="submit" className={cx("button")}>Đăng Nhập</button>
+            <button type={buttonType()} onClick={submitForm} className={cx("button")}>Đăng Nhập</button>
           </div>
-        </Form>
-      </Formik>
+        </form>
+      </div> 
       </div>
      ); 
 }

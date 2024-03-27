@@ -3,8 +3,9 @@ const passport =require("passport")
 
 class LoginController{
     login(req, res, next) {
-        
-        res.send(req.query.name)
+        return res.status(200).send({
+            data: false
+         })
      }
 }
 

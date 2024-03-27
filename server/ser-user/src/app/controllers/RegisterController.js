@@ -10,14 +10,14 @@ class RegisterController{
     }
     async register(req, res, next){
             try {
-                const course = new Course(req.query)
+                const course = new Course(req.body)
                 const checkEmail = Course.find({ email: course.email }) 
                 const check = (await checkEmail).length   
                 if(check > 0){
                     res.redirect('/register')
                 }
                 else{
-                    let hashedPassword = await bcrypt.hash(req.query.password, 10)
+                    let hashedPassword = await bcrypt.hash(req.body.password, 10)
                     course.password = hashedPassword    
                     course.save().then(() => res.redirect('/login'))
                 }
